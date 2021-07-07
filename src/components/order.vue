@@ -66,7 +66,6 @@ export default {
           vm.successOrder.push(e)
         }
       })
-      console.log(vm.successOrder , vm.processOrder);
     }
   }
 }
