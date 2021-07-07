@@ -57,7 +57,7 @@ export default {
       const vm = this
       vm.apiData = api.orders
       vm.apiData = this.apiData.sort(function (a,b) {
-        return a.status.code - b.status.code
+        return new Date(b.date) - new Date(a.date);
       })
       vm.apiData.forEach(e=> {
         if(e.status.code <= 2) {
